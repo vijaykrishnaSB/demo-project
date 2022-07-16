@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.image {
+    width:180px;
+    /* border-radius: 100px; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:200px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    margin:20px;
+    transition: transform 0.2s;
+    /* transform:0.2sec;
+    animation:ease-in; */
+}
+.container:hover {
+    transform: translatey(1rem)
+}
+
+.container h2{
+    color:black;
+    margin:5px 0px;
+}
+.container h4{
+    color: rgb(61, 55, 55);
+    margin: 5px 0px;
+}
+.Symbol {
+    margin:0px 5px;
+}

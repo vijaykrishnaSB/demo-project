@@ -1,38 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
 .App {
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(90deg, orange, rgb(66, 151, 66));
+}
+.App h1{
+    color:black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App p{
+    margin: 20px 0px;
+    color:black;
+    font-size: 15px;
+    text-align: center;
+}
+.Appcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    max-width: 100%;
+} 
+.Landing {
+    background: url('./images/image1.jpg');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Landing .overlay {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: red;  */
+} 
+form {
+    display: flex;
+    border-radius: 20px;
+    height: 280px;
+    align-items:center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    font-size: 16px;
+    padding-top:15px;
+    padding-left:25px;
+    text-align: center;
+    border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-container {
+    background: url('./images/image1.jpg')no-repeat center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(65deg,rgb(59, 82, 90), rgb(94, 94, 188));
+}
+.form-container {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 90px;
+}
+.contactuspage {
+    display:inline-flexbox;
+    text-align: center;
+    padding-left: 110px;
+    padding-top: 100px;
+    padding-right: 100px;
+    color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+    align-content: center;
+    display: flexbox;
+    max-width: 200%;
+    min-width: 200%;
+    width: 70%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
 }
+input {
+    text-justify: auto;
+    display: flexbox;
+    width: 200%;
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    justify-content: center;
+   
+}
+label {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.btn {
+    display: flex;
+    width:150px;
+    justify-content: center;
+    text-align: center;
+}
+
