@@ -2,11 +2,24 @@
     margin: 0px;
     padding: 0px;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    font-size: 18PX;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    box-sizing: border-box;
+    background:linear-gradient(90deg, orange, rgb(66, 151, 66));
+
+}
+
 .image {
     width:180px;
     /* border-radius: 100px; */
 }
-.container {
+.managmentcontainer {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -19,18 +32,36 @@
     /* transform:0.2sec;
     animation:ease-in; */
 }
-.container:hover {
+.managmentcontainer:hover {
     transform: translatey(1rem)
 }
 
-.container h2{
+.mangmentcontainer h2{
     color:black;
     margin:5px 0px;
 }
-.container h4{
+.mangmentcontainer h4{
     color: rgb(61, 55, 55);
     margin: 5px 0px;
 }
 .Symbol {
     margin:0px 5px;
+}
+.Appcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-container h2{
+    color:black;
+}
+
+.about-container p{
+    margin: 20px 0px;
+    color:black;
+    font-size: 15px;
+    text-align: center;
+    /* font-size: 18px; */
+    /* font-family: 'Edu TAS Beginner', cursive; */
+    /* font-family: 'Cormorant SC', serif; */
 }

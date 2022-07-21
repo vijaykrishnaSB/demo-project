@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "./App.css";
+import "./Contactus.css";
 
-function Contactus() {
+const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -10,7 +10,7 @@ function Contactus() {
 
     emailjs
       .sendForm(
-        "service_gbdds1m",
+        "service_w2sngy1",
         "template_9s5b2mb",
         form.current,
         "dcWYxxIJ9vthLf0tP"
@@ -31,26 +31,30 @@ function Contactus() {
     <div className="contact-container">
       <div className="contactuspage">
         <h1>Contact Us</h1>
-        <h3>contactus@gmail.com</h3>
-        <h4>H.NO:-1-1-100,Trust Road,Trust Street,Trust, India</h4>
-      </div>
-      <div className="form-container">
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input placeholder="Enter your name" type="text" name="user_name" />
-          <label>Email</label>
-          <input
-            placeholder="Enter your Email"
-            type="email"
-            name="user_email"
-          />
-          <label>Message</label>
-          <textarea name="message" />
-          <input class="btn" type="button" value="Send Mail" />
-        </form>
+        <br />
+        <br />
+        <h3>Trustmail@gmail.com</h3>
+        <br />
+        <h4>PLot no:99,123 Street,Trust Road,India</h4>
+        <div className="form-container">
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input placeholder="Enter your name" type="text" name="user_name" />
+            <label>Email</label>
+            <input
+              placeholder="Enter your Email"
+              type="email"
+              name="user_email"
+            />
+            <label>Message</label>
+            <textarea name="message" />
+            {/* <input class="btn" type="button" value="Send Mail" /> */}
+            <input type="submit" value="Send Mail" />
+          </form>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Contactus;
+export default Contact;
