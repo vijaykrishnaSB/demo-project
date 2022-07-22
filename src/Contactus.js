@@ -34,22 +34,20 @@ const Contact = () => {
         <br />
         <br />
         <h3>Trustmail@gmail.com</h3>
-        <br />
         <h4>PLot no:99,123 Street,Trust Road,India</h4>
         <div className="form-container">
           <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
+            <label>Name:</label>
             <input placeholder="Enter your name" type="text" name="user_name" />
-            <label>Email</label>
+            <label>Email:</label>
             <input
               placeholder="Enter your Email"
               type="email"
               name="user_email"
             />
-            <label>Message</label>
+            <label>Message:</label>
             <textarea name="message" />
-            {/* <input class="btn" type="button" value="Send Mail" /> */}
-            <input type="submit" value="Send Mail" />
+            <input className="btn-contactus" type="submit" value="Send Mail" />
           </form>
         </div>
       </div>

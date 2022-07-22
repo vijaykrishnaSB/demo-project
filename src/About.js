@@ -25,7 +25,7 @@ const About = () => {
       <div className="Appcard">
         <div className="managmentcontainer">
           <img src={image2} className="image" />
-          <h2>APJ Abdual Kalam</h2>
+          <h3>APJ Abdual Kalam</h3>
           <h4>Founder</h4>
           <p>
             Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist
@@ -41,7 +41,7 @@ const About = () => {
             managmentcontainer"
         >
           <img src={image3} className="image" />
-          <h2>Mahathma Gandhi</h2>
+          <h3>Mahathma Gandhi</h3>
           <h4>Co-Founder</h4>
           <p>
             Mohandas Karamchand Gandhi was an Indian lawyer, and political
@@ -57,8 +57,8 @@ const About = () => {
             managmentcontainer"
         >
           <img src={image4} className="image" />
-          <h2>Subhash Chandra Bose</h2>
-          <h4>Executive Officer</h4>
+          <h3>Subhash Chandra Bose</h3>
+          <h4>Co-Founder</h4>
           <p>
             Subhas Chandra Bose (also called Netaji) is known for his role in
             India’s independence movement & part of the noncooperation movement

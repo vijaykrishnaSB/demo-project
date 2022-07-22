@@ -1,7 +1,6 @@
 import React from "react";
 import "./Ourteam.css";
 import image8 from "./images/image8.jpg";
-import image2 from "./images/image2.jpg";
 import image11 from "./images/image11.jpg";
 import image12 from "./images/image12.jpg";
 import image13 from "./images/image13.jpg";
@@ -66,7 +65,7 @@ const Ourteam = () => {
         </div>
         <div className="managment-container">
           <img src={image12} className="image" />
-          <h3>Micheal Schumacher</h3>
+          <h3>Schumacher</h3>
           <h5>Education Department</h5>
         </div>
       </div>

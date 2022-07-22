@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Reportcase />
+        <Reportcase />
         {/* <About /> */}
         {/* <Contactus /> */}
         {/* <Ourteam /> */}

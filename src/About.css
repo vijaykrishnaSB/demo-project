@@ -1,8 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 .about-container {
     display: flex;
     align-items: center;
@@ -10,14 +5,11 @@
     justify-content: center;
     flex-direction: column;
     height:100vh;
-    box-sizing: border-box;
     background:linear-gradient(90deg, orange, rgb(66, 151, 66));
-
 }
 
 .image {
     width:180px;
-    /* border-radius: 100px; */
 }
 .managmentcontainer {
     display: flex;
@@ -29,8 +21,6 @@
     border-radius: 5px;
     margin:20px;
     transition: transform 0.2s;
-    /* transform:0.2sec;
-    animation:ease-in; */
 }
 .managmentcontainer:hover {
     transform: translatey(1rem)
@@ -61,7 +51,4 @@
     color:black;
     font-size: 15px;
     text-align: center;
-    /* font-size: 18px; */
-    /* font-family: 'Edu TAS Beginner', cursive; */
-    /* font-family: 'Cormorant SC', serif; */
 }
