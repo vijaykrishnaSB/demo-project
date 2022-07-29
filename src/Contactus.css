@@ -18,15 +18,14 @@ label {
 }
 .contact-container {
     display: flex;
-    height: 700px;
+    height: 800px;
     width: 100%;
     justify-content: center;
-    /* background:linear-gradient(180deg,grey,black); */
-    background: grey;
+    background:linear-gradient(180deg,white, orange);
 }
 .form-container {
     display: flex;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 .contactuspage {
     text-align: center;

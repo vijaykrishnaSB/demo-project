@@ -1,84 +1,56 @@
-import React from "react";
+import React, { useState } from 'react';
+import Reportcaseform from './Reportform';
 import "./Reportcase.css";
-import Reportcrud from "../Report/Reportcrud";
+import jsonData from '../Report/data.json';
 
-function Reportcase (){
-  return (
-    <div>
-      <form>
-        <div className="reportform">
-          <div>
-            <label> Name:</label>
-            <input
-              className="input"
-              type="text"
-              placeholder="Enter Fullname"
-            ></input>
-          </div>
-          <div>
-            <label>Email ID:</label>
-            <input
-              className="input"
-              type="email"
-              placeholder="Enter email"
-            ></input>
-          </div>
-          <div>
-            <label>Mobile Number:</label>
-            <input className="input" type="number" placeholder="number"></input>
-          </div>
-        </div>
-        <div className="reportform">
-          <div>
-            <label>Date:</label>
-            <input className="input" type="date"></input>
-          </div>
-          <div>
-            <label>Address:</label>
-            <input
-              className="inputform"
-              type="text"
-              placeholder="H.no/Street name/Road name/area."
-            ></input>
-          </div>
-        </div>
-        <div className="reportstate">
-          <div>
-            <label> District:</label>
-            <input
-              className="input"
-              type="text"
-              placeholder="Enter District"
-            ></input>
-          </div>
-          <div>
-            <label> State:</label>
-            <input
-              className="input"
-              type="text"
-              placeholder="Enter State"
-            ></input>
-          </div>
-          <div>
-            <label> Pincode:</label>
-            <input
-              className="input"
-              type="text"
-              placeholder="Enter Pincode"
-            ></input>
-          </div>
-        </div>
-        <div className="textarea">
-          <div>
-            <label> Reason of Reporting:</label>
-            <textarea rows="1" cols="49" type="text" />
-          </div>
-        </div>
-        <div className="btn-report"><button className="btn-reportcase">Submit</button></div>
-      </form>
-        <Reportcrud />
-    </div>
-  );
-};
+const Reportcase = () => {
+    const [tabdata, setTabdata] = useState(jsonData);
 
+    const tableRows = tabdata.map((info) => {
+        return (
+
+            <tr>
+                {/* <td>{info.id}</td> */}
+                <td>{info.name}</td>
+                <td>{info.emailid}</td>
+                <td>{info.mobilenumber}</td>
+                <td>{info.date}</td>
+                <td>{info.address}</td>
+                <td>{info.district}</td>
+                <td>{info.state}</td>
+                <td>{info.pincode}</td>
+                <td>{info.reasonofreporting}</td>
+            </tr >
+
+        );
+    });
+
+    const addRows = (data) => {
+        const totalReportlist = tabdata.length;
+        data.id = totalReportlist + 1;
+        const updatedReportlistData = [...tabdata];
+        updatedReportlistData.push(data);
+        setTabdata(updatedReportlistData);
+    };
+
+    return (
+        <div>
+            <Reportcaseform func={addRows} /> <br />
+            <table id="table-data">
+                <tr>
+                    <th>Name</th>
+                    <th>Emailid</th>
+                    <th>Mobile number</th>
+                    <th>Date of Reporting</th>
+                    <th>Address</th>
+                    <th>District</th>
+                    <th>State</th>
+                    <th>Pincode</th>
+                    <th>Reason of reporting</th>
+                </tr>
+                <tbody>{tableRows}</tbody>
+            </table>
+        </div>
+    );
+}
 export default Reportcase;

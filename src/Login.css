@@ -1,0 +1,42 @@
+.Login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 550px;
+    flex-direction: column;
+    background-color: rgb(230, 230, 230);
+    margin-left: 70vh;
+    border-radius: 12px;
+
+
+}
+
+.Login-container input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.log-button {
+    background-color: rgb(6, 6, 177);
+    height: 44px;
+    width: 300px;
+    color: white;
+
+}
+
+.login-container1 {
+    background:linear-gradient(180deg, white, rgb(59, 59, 240));
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+
+.err-msg {
+    color: rgb(165, 6, 6);
+}

@@ -4,8 +4,9 @@
     font-size: 18PX;
     justify-content: center;
     flex-direction: column;
-    height:100vh;
-    background:linear-gradient(90deg, orange, rgb(66, 151, 66));
+    height:800px;
+    /* background:linear-gradient(90deg, orange, rgb(66, 151, 66)); */
+    background: linear-gradient(180deg,white, rgb(24, 167, 24));
 }
 
 .image {

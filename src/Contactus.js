@@ -30,11 +30,10 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contactuspage">
-        <h1>Contact Us</h1>
+        <h3>Contact Us</h3>
         <br />
-        <br />
-        <h3>Trustmail@gmail.com</h3>
-        <h4>PLot no:99,123 Street,Trust Road,India</h4>
+        <h5>Trustmail@gmail.com</h5>
+        <h5>Plot no:99,123 Street,Trust Road,India</h5>
         <div className="form-container">
           <form ref={form} onSubmit={sendEmail}>
             <label>Name:</label>

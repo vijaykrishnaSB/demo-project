@@ -1,0 +1,27 @@
+.header-container {
+    height: 15vh;
+    padding-top: 10px;
+    position: sticky; 
+    background:white;
+}
+
+.nav-items {
+    display: flex;
+    gap: 35px;
+    /* padding-top: 20px; */
+    justify-content: right;
+    padding-right: 100px;
+    /* margin-bottom: 20px; */
+    list-style: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.link-item {
+    text-decoration: none;
+    color: black;
+}
+.trust {
+    color:greenyellow;
+    padding-left: 50px;
+}

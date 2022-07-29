@@ -2,13 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    height: 100vh;
+    min-height: 100%;
+    /* margin-top: auto; */
 }
 .footer-container {
     display: flex;
     width: 100%;
-    background: rgb(238, 72, 11);
-    height: 22vh;
+    background:rgb(165, 247, 231);
+    height: 25vh;
+    /* color: white; */
 }
 .footer-contact {
     align-items:flex-end;
@@ -16,12 +18,12 @@
     padding-left: 100px;
 }
 .social-media {
-    padding-left: 180px;
+    padding-left: 300px;
     padding-top: 40px;
 }
 .copyright{
     display: flex;
-    padding-top: 120px;
+    padding-top: 140px;
     font-size: 15px;
     padding-left: 100px;
     font-family: 'IBM Plex Serif', serif;
