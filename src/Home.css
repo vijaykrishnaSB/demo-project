@@ -16,5 +16,9 @@
     height: 8vh;
     font-size: 25px;
     border: 2px solid black;
-    background: rgb(52, 165, 52);
+    background: navy;
+    color: white;
+}
+.homebutton:hover {
+    background-color: rgb(93, 129, 40);
 }

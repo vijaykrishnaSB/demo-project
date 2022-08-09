@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-    width: 600px;
+    width: 500px;
     flex-direction: column;
-    background:white;
+    /* background:white; */
     margin-left: 70vh;
+    border: 2px solid black;
     border-radius: 12px;
 
 
@@ -35,7 +36,7 @@
 }
 
 .reg-container1 {
-    background:linear-gradient(180deg, white, rgb(180, 186, 84)) ;
+    background: linear-gradient(180deg,white,rgb(160, 192, 204)) ;
     height: 120vh;
     padding-top: 10vh;
 }

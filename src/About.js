@@ -60,7 +60,7 @@ const About = () => {
           <h3>Subhash Chandra Bose</h3>
           <h4>Co-Founder</h4>
           <p>
-            Subhas Chandra Bose (also called Netaji) is known for his role in
+             Netaji Subhas Chandra Bose is known for his role in
             India’s independence movement & part of the noncooperation movement
             and a leader of the Indian National Congress & militant wing and known
             for his advocacy of socialist policies.

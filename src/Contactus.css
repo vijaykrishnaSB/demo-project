@@ -15,17 +15,20 @@ input {
 }
 label {
     display: flex;
+    color: white;
 }
 .contact-container {
     display: flex;
     height: 800px;
     width: 100%;
     justify-content: center;
-    background:linear-gradient(180deg,white, orange);
+    background:rgb(4, 13, 57);
+    color: white;
 }
 .form-container {
     display: flex;
     padding-top: 70px;
+    color: white;
 }
 .contactuspage {
     text-align: center;

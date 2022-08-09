@@ -33,7 +33,7 @@ const RegisterForm = () => {
         errors.password = "This Field is Rquired";
       }
       if (!values.confirmPassword) {
-        errors.confirmPassword = "This Field is Rquired";
+        errors.confirmPassword = "";
       }
       return errors;
     },
@@ -108,7 +108,7 @@ const RegisterForm = () => {
           {formik.errors.confirmPassword ? (
             <div className="errors">{formik.errors.confirmPassword}</div>
           ) : null}
-
+            {formik.values.password !== formik.values.confirmPassword ? <div className="errors"> </div> : " "}
           <button type="submit" className="reg-button">
             Register{" "}
           </button>

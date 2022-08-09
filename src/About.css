@@ -6,7 +6,7 @@
     flex-direction: column;
     height:800px;
     /* background:linear-gradient(90deg, orange, rgb(66, 151, 66)); */
-    background: linear-gradient(180deg,white, rgb(24, 167, 24));
+    background:rgb(4, 13, 57);
 }
 
 .image {
@@ -17,24 +17,26 @@
     justify-content: center;
     flex-direction: column;
     width:200px;
-    background: whitesmoke;
+    background: rgb(4, 13, 57);
     padding: 10px;
     border-radius: 5px;
     margin:20px;
     transition: transform 0.2s;
+    border:2px solid white;
 }
 .managmentcontainer:hover {
     transform: translatey(1rem)
 }
 
-.mangmentcontainer h2{
-    color:black;
+.managmentcontainer h3{
+    color:wheat;
     margin:5px 0px;
 }
-.mangmentcontainer h4{
-    color: rgb(61, 55, 55);
+.managmentcontainer h4{
+    color: white;
     margin: 5px 0px;
 }
+
 .Symbol {
     margin:0px 5px;
 }
@@ -44,12 +46,15 @@
     justify-content: center;
 }
 .about-container h2{
-    color:black;
+    color:white;
 }
 
 .about-container p{
     margin: 20px 0px;
-    color:black;
+    color:white;
     font-size: 15px;
     text-align: center;
 }
+ .icon {
+    color:white;
+ }
