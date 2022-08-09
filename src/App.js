@@ -8,7 +8,7 @@ import About from "./components/About/About";
 import Reportcase from "./components/Report/Reportcase";
 import Donate from "./components/Donate/Donate";
 import Ourteam from "./components/Ourteam/Ourteam";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footers/Footer";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 // import { Home } from "@mui/icons-material";
