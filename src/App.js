@@ -11,7 +11,6 @@ import Ourteam from "./components/Ourteam/Ourteam";
 import Footer from "./components/Footers/Footer";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
-// import { Home } from "@mui/icons-material";
 
 function App() {
   return (
