@@ -6,7 +6,7 @@ import "./Reportcase.css";
 const Reportcase = () => {
   const [tabdata, setTabdata] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/reports")
+    fetch("https://vijay-trustproject.herokuapp.com/reports")
       .then((response) => response.json())
       .then((json) => setTabdata(json));
   }, []);

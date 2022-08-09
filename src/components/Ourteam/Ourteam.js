@@ -1,16 +1,15 @@
 import React from "react";
 import "./Ourteam.css";
-
-import image8 from "./images/image8.jpg";
-import image11 from "./images/image11.jpg";
-import image12 from "./images/image12.jpg";
-import image13 from "./images/image13.jpg";
-import image14 from "./images/image14.jpg";
-import image15 from "./images/image15.jpg";
-import image16 from "./images/image16.jpg";
-import image17 from "./images/image17.jpg";
-import image18 from "./images/image18.jpg";
-import image19 from "./images/image19.jpg";
+import image8 from "../../assets/image8.jpg";
+import image11 from "../../assets/image11.jpg";
+import image12 from "../../assets/image12.jpg";
+import image13 from "../../assets/image13.jpg";
+import image14 from "../../assets/image14.jpg";
+import image15 from "../../assets/image15.jpg";
+import image16 from "../../assets/image16.jpg";
+import image17 from "../../assets/image17.jpg";
+import image18 from "../../assets/image18.jpg";
+import image19 from "../../assets/image19.jpg";
 
 const Ourteam = () => {
   return (

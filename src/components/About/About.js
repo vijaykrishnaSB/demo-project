@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
-import image2 from "./images/image2.jpg";
-import image3 from "./images/image3.jpg";
-import image4 from "./images/image4.jpg";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3.jpg";
+import image4 from "../../assets/image4.jpg";
 import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 import ElderlyIcon from "@mui/icons-material/Elderly";

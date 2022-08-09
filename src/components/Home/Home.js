@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import p1 from "./images/p1.jpg";
+import p1 from "../../assets/p1.jpg";
 import Carousel from "react-bootstrap/Carousel";
 
 function Home({ id }) {

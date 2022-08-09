@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
-import Contactus from "./Contactus";
-import About from "./About";
-import Reportcase from "./Report/Reportcase";
-import Donate from "./Donate";
-import Ourteam from "./Ourteam";
-import Footer from "./Footer";
-import Login from "./Login";
-import Register from "./Register";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Contactus from "./components/Contactus/Contactus";
+import About from "./components/About/About";
+import Reportcase from "./components/Report/Reportcase";
+import Donate from "./components/Donate/Donate";
+import Ourteam from "./components/Ourteam/Ourteam";
+import Footer from "./components/Footer/Footer";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 // import { Home } from "@mui/icons-material";
 
 function App() {
@@ -24,10 +24,10 @@ function App() {
         <Route path="/Donates/:id" element={<Donate />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/ourteam" element={<Ourteam />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
