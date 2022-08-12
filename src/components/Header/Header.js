@@ -8,7 +8,7 @@ function Header() {
     <nav className="header-container">
         <div className="trust">
           {/* <FontAwesomeIcon icon="fa-brands fa-hornbill" /> */}
-          <h1 className="logo"><BlurOnIcon sx={{ color: "red", fontSize: 45 }}/>Trust </h1>
+          <h1 className="logo">Trust </h1>
         </div>
         
       <ul className="nav-items">

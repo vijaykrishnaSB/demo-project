@@ -5,8 +5,8 @@ import "./Register.css";
 const RegisterForm = () => {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      // firstName: "",
+      // lastName: "",
       email: "",
       password: "",
       confirmPassword: "",
@@ -20,12 +20,12 @@ const RegisterForm = () => {
     },
     validate: (values) => {
       let errors = {};
-      if (!values.firstName) {
-        errors.firstName = "This Field is Rquired";
-      }
-      if (!values.lastName) {
-        errors.lastName = "This Field is Rquired";
-      }
+      // if (!values.firstName) {
+      //   errors.firstName = "This Field is Rquired";
+      // }
+      // if (!values.lastName) {
+      //   errors.lastName = "This Field is Rquired";
+      // }
       if (!values.email) {
         errors.email = "This Field is Rquired";
       }
@@ -44,7 +44,7 @@ const RegisterForm = () => {
       <div className="reg-container">
         <h3>Enter Details</h3>
         <form autoComplete="off" onSubmit={formik.handleSubmit}>
-          <label>FirstName</label>
+          {/* <label>FirstName</label>
           <input
             type="text"
             name="firstName"
@@ -68,7 +68,7 @@ const RegisterForm = () => {
           />
           {formik.errors.lastName ? (
             <div className="errors">{formik.errors.lastName}</div>
-          ) : null}
+          ) : null} */}
 
           <label>Email</label>
           <input

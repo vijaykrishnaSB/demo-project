@@ -8,9 +8,9 @@
 .footer-container {
     display: flex;
     width: 100%;
-    background:rgb(165, 247, 231);
+    background: rgb(28, 27, 27);
     height: 25vh;
-    /* color: white; */
+    color:rgb(230, 170, 19);
 }
 .footer-contact {
     align-items:flex-end;

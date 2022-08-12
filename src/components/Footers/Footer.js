@@ -27,7 +27,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/" target="_blank">
             <FacebookIcon sx={{ color: "darkblue", fontSize: 35 }} />
           </a>
-          <a href="https://www.instagram.com/accounts/login/" target="_blank" >
+          <a href="https://www.instagram.com/accounts/login/" target="_blank">
             <InstagramIcon sx={{ color: "red", fontSize: 35 }} />
           </a>
           <a href="https://twitter.com/ " target="_blank">
@@ -35,9 +35,6 @@ const Footer = () => {
           </a>
           <a href="https://www.youtube.com/" target="_blank">
             <YouTubeIcon sx={{ color: "red", fontSize: 35 }} />
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank">
-            <LinkedInIcon sx={{ color: "blue", fontSize: 35 }} />
           </a>
         </div>
       </div>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 60vh;
     width: 500px;
     flex-direction: column;
     /* background:white; */
@@ -37,6 +37,6 @@
 
 .reg-container1 {
     background: linear-gradient(180deg,white,rgb(160, 192, 204)) ;
-    height: 120vh;
+    height: 100vh;
     padding-top: 10vh;
 }

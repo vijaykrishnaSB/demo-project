@@ -22,3 +22,7 @@
 .homebutton:hover {
     background-color: rgb(93, 129, 40);
 }
+.quotes {
+    font-family: 'Rubik Marker Hatch', cursive;
+    color:rgb(248, 191, 2);
+}
