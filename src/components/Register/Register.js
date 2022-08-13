@@ -1,87 +1,55 @@
+// import { TouchAppRounded } from "@mui/icons-material";
 import { useFormik } from "formik";
 import React from "react";
 import "./Register.css";
+import { basicSchema } from "./schema";
 
 const RegisterForm = () => {
-  const formik = useFormik({
+  const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: {
-      // firstName: "",
-      // lastName: "",
+      username: "",
       email: "",
       password: "",
       confirmPassword: "",
     },
-    onSubmit: (values) => {
+    validationSchema: basicSchema,
+    onSubmit: (values, actions) => {
       if (values.password === values.confirmPassword) {
         alert("Registration Successfull");
       } else {
-        alert("password not matching")
       }
-    },
-    validate: (values) => {
-      let errors = {};
-      // if (!values.firstName) {
-      //   errors.firstName = "This Field is Rquired";
-      // }
-      // if (!values.lastName) {
-      //   errors.lastName = "This Field is Rquired";
-      // }
-      if (!values.email) {
-        errors.email = "This Field is Rquired";
-      }
-      if (!values.password) {
-        errors.password = "This Field is Rquired";
-      }
-      if (!values.confirmPassword) {
-        errors.confirmPassword = "";
-      }
-      return errors;
+      actions.resetForm();
     },
   });
-  console.log("form values", formik.values);
   return (
     <div className="reg-container1">
       <div className="reg-container">
         <h3>Enter Details</h3>
-        <form autoComplete="off" onSubmit={formik.handleSubmit}>
-          {/* <label>FirstName</label>
+        <form autoComplete="off" onSubmit={handleSubmit}>
+          <label>UserName</label>
           <input
             type="text"
-            name="firstName"
-            id="firstName"
-            placeholder="Firstname"
-            value={formik.values.firstName}
-            onChange={formik.handleChange}
+            name="username"
+            id="username"
+            placeholder="Username"
+            value={values.username}
+            onChange={handleChange}
           />
-          {formik.errors.firstName ? (
-            <div className="errors">{formik.errors.firstName}</div>
-          ) : null}
-
-          <label>LastName</label>
-          <input
-            type="text"
-            name="lastName"
-            id="lastName"
-            placeholder="Lastname"
-            value={formik.values.lastName}
-            onChange={formik.handleChange}
-          />
-          {formik.errors.lastName ? (
-            <div className="errors">{formik.errors.lastName}</div>
-          ) : null} */}
-
+          {errors.username && touched.username && (
+            <p className="error">{errors.username}</p>
+          )}
           <label>Email</label>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Enter email"
-            value={formik.values.email}
-            onChange={formik.handleChange}
+            value={values.email}
+            onChange={handleChange}
           />
-          {formik.errors.email ? (
-            <div className="errors">{formik.errors.email}</div>
-          ) : null}
+          {errors.email && touched.email && (
+            <p className="error">{errors.email}</p>
+          )}
 
           <label>Password</label>
           <input
@@ -89,12 +57,12 @@ const RegisterForm = () => {
             name="password"
             id="password"
             placeholder="Enter password"
-            value={formik.values.password}
-            onChange={formik.handleChange}
+            value={values.password}
+            onChange={handleChange}
           />
-          {formik.errors.password ? (
-            <div className="errors">{formik.errors.password}</div>
-          ) : null}
+          {errors.password && touched.password && (
+            <p className="error">{errors.password}</p>
+          )}
 
           <label>Confirm Password</label>
           <input
@@ -102,13 +70,13 @@ const RegisterForm = () => {
             name="confirmPassword"
             id="confirmPassword"
             placeholder="Confirm password"
-            value={formik.values.confirmPassword}
-            onChange={formik.handleChange}
+            value={values.confirmPassword}
+            onChange={handleChange}
           />
-          {formik.errors.confirmPassword ? (
-            <div className="errors">{formik.errors.confirmPassword}</div>
-          ) : null}
-            {formik.values.password !== formik.values.confirmPassword ? <div className="errors"> </div> : " "}
+          {errors.confirmPassword && touched.confirmPassword && (
+            <p className="error">{errors.confirmPassword}</p>
+          )}
+
           <button type="submit" className="reg-button">
             Register{" "}
           </button>

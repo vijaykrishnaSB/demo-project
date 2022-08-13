@@ -4,7 +4,7 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 const formValidationSchema = yup.object({
-  email: yup.string().required("Required Emailid"),
+  email: yup.string().required("Required Email"),
   password: yup.string().required("Required Password"),
 });
 function LoginForm() {
