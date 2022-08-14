@@ -23,7 +23,6 @@ function Home({ id }) {
 
             <Carousel.Caption>
               <h2 className="quotes" >A Child Without Education Is Like A Bird Without Wings...</h2>
-              {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

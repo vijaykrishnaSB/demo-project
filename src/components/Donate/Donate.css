@@ -1,8 +1,8 @@
-.reg-container {
+.donate-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 60vh;
     width: 500px;
     flex-direction: column;
     margin-left: 70vh;
@@ -10,8 +10,8 @@
     border-radius: 12px;
 }
 
-.reg-container input {
-    width: 100%;
+.donate-container input {
+    width: 350px;
     padding: 12px 20px;
     margin: 8px 0;
     display: block;
@@ -24,15 +24,7 @@
     color: red;
 }
 
-.reg-button {
-    background-color: green;
-    height: 44px;
-    width: 300px;
-    color: white;
-
-}
-
-.reg-container1 {
+.donate-container1 {
     background: linear-gradient(180deg,white,rgb(160, 192, 204)) ;
     height: 100vh;
     padding-top: 10vh;

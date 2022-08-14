@@ -1,16 +1,13 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
-import BlurOnIcon from '@mui/icons-material/BlurOn';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Header() {
   return (
     <nav className="header-container">
-        <div className="trust">
-          {/* <FontAwesomeIcon icon="fa-brands fa-hornbill" /> */}
-          <h1 className="logo">Trust </h1>
-        </div>
-        
+      <div className="trust">
+        <h1 className="logo">Trust </h1>
+      </div>
+
       <ul className="nav-items">
         <li>
           <Link className="link-item" to="/">
@@ -37,11 +34,7 @@ function Header() {
             Login{" "}
           </Link>
         </li>
-        {/* <li >
-          <Link className="link-items"to="/register">Register</Link>
-        </li> */}
       </ul>
-      {/* <Outlet /> */}
     </nav>
   );
 }

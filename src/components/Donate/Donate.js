@@ -2,13 +2,16 @@ import React from "react";
 import { useFormik } from "formik";
 import "./Donate.css";
 import { donateSchema } from "./Donateschema";
+import StripeCheckout from "react-stripe-checkout";
 
 const DonateForm = () => {
-
+  const onToken = (token) => {
+    console.log(token);
+  };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: {
-      username: "",
-      email: "",
+      name: "",
+      number: "",
       amount: "",
     },
     validationSchema: donateSchema,
@@ -17,33 +20,32 @@ const DonateForm = () => {
     },
   });
   return (
-    <div className="reg-container1">
-      <div className="reg-container">
-        {/* <h3>Enter Details</h3> */}
+    <div className="donate-container1">
+      <div className="donate-container">
         <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>UserName</label>
+          <label>Name</label>
           <input
             type="text"
-            name="username"
-            id="username"
-            placeholder="Username"
-            value={values.username}
+            name="name"
+            id="name"
+            placeholder="Enter name"
+            value={values.name}
             onChange={handleChange}
           />
-          {errors.username && touched.username && (
-            <p className="error">{errors.username}</p>
+          {errors.name && touched.name && (
+            <p className="error">{errors.name}</p>
           )}
-          <label>Email</label>
+          <label>Mobile-Number</label>
           <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter email"
-            value={values.email}
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Enter Number"
+            value={values.number}
             onChange={handleChange}
           />
-          {errors.email && touched.email && (
-            <p className="error">{errors.email}</p>
+          {errors.number && touched.number && (
+            <p className="error">{errors.number}</p>
           )}
           <label>Amount</label>
           <input
@@ -57,10 +59,10 @@ const DonateForm = () => {
           {errors.amount && touched.amount && (
             <p className="error">{errors.amount}</p>
           )}
-
-          <button type="submit" className="reg-button">
-            Process to Pay{" "}
-          </button>
+          <StripeCheckout
+            token={onToken}
+            stripeKey="pk_test_51LWghCSHpzC9oJoTJCtwtTbOCJ5HPoQdCdVYDg2apb05jRhBIy1vuVK5pvfjumcXX2ARRAhJDNlHbGqHkcVZB6IR00pHoNYTTS"
+          />
         </form>
       </div>
     </div>

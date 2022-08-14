@@ -11,6 +11,7 @@ const formValidationSchema = yup.object({
 
 function LoginForm() {
   const getuser = (values) => {
+    console.log(values);
     fetch("http://localhost:4000/users/login", {
       method: "POST",
       body: JSON.stringify(values),
@@ -28,9 +29,13 @@ function LoginForm() {
         password: "",
       },
       validationSchema: formValidationSchema,
-      onSubmit: (values) => {
+      onSubmit: (values, actions) => {
         console.log("onSubmit", values);
+        // if (values.password === values.password) {
+        //   alert("Successfully login");
+        // }
         getuser(values);
+        actions.resetForm();
       },
     });
   return (
@@ -62,11 +67,11 @@ function LoginForm() {
             <div className="err-msg">{errors.password}</div>
           ) : null}
 
-          {/* <Link to="/"> */}
+          <Link to="/">
           <button type="submit" className="log-button">
             Login
           </button>
-          {/* </Link> */}
+          </Link>
           <p>
             {" "}
             No account ?{" "}

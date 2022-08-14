@@ -8,10 +8,8 @@
 .nav-items {
     display: flex;
     gap: 35px;
-    /* padding-top: 20px; */
     justify-content: right;
     padding-right: 100px;
-    /* margin-bottom: 20px; */
     list-style: none;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
@@ -19,7 +17,6 @@
 .link-item {
     color: rgb(230, 170, 19);
     text-decoration: none;
-    /* color: black; */
 }
 .trust {
     color:greenyellow;

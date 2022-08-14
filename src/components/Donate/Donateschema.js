@@ -1,9 +1,8 @@
 import * as yup from "yup";
 
 export const donateSchema = yup.object().shape({
-  username: yup.string().required("Required"),
-  email: yup.string().email("please enter a valid email").required("Required"),
-  //   number: yup.number().positive().integer().max(10).required("Required"),
+  name: yup.string().required("Required"),
+  amount: yup.number().positive().integer().max(10).required("Required"),
   number: yup
     .string()
     .matches(

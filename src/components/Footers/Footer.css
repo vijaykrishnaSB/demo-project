@@ -1,9 +1,7 @@
 .footer-container1 {
     display: flex;
     justify-content: center;
-    align-items: end;
     min-height: 100%;
-    /* margin-top: auto; */
 }
 .footer-container {
     display: flex;
