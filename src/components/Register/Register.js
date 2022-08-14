@@ -5,6 +5,17 @@ import "./Register.css";
 import { basicSchema } from "./schema";
 
 const RegisterForm = () => {
+  const getuser = (values) => {
+    fetch("http://localhost:4000/users/signup", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((data) => data.json())
+      .then((response) => {
+        alert(response.message);
+      });
+  };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: {
       username: "",
@@ -16,8 +27,8 @@ const RegisterForm = () => {
     onSubmit: (values, actions) => {
       if (values.password === values.confirmPassword) {
         alert("Registration Successfull");
-      } else {
       }
+      getuser(values);
       actions.resetForm();
     },
   });

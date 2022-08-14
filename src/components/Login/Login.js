@@ -4,14 +4,23 @@ import "./Login.css";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 
-
 const formValidationSchema = yup.object({
   email: yup.string().required("Required Email"),
   password: yup.string().required("Required Password"),
 });
 
-
 function LoginForm() {
+  const getuser = (values) => {
+    fetch("http://localhost:4000/users/login", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((data) => data.json())
+      .then((response) => {
+        alert(response.message);
+      });
+  };
   const { handleSubmit, values, handleChange, handleBlur, touched, errors } =
     useFormik({
       initialValues: {
@@ -21,6 +30,7 @@ function LoginForm() {
       validationSchema: formValidationSchema,
       onSubmit: (values) => {
         console.log("onSubmit", values);
+        getuser(values);
       },
     });
   return (

@@ -4,18 +4,15 @@ import "./Donate.css";
 import { donateSchema } from "./Donateschema";
 
 const DonateForm = () => {
+
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: {
       username: "",
       email: "",
-      number: "",
+      amount: "",
     },
     validationSchema: donateSchema,
     onSubmit: (values, actions) => {
-      if (values.empty) {
-        alert(" Submitted");
-      } else {
-      }
       actions.resetForm();
     },
   });
@@ -48,21 +45,21 @@ const DonateForm = () => {
           {errors.email && touched.email && (
             <p className="error">{errors.email}</p>
           )}
-          <label>Number</label>
+          <label>Amount</label>
           <input
             type="number"
-            name="number"
-            id="number"
-            placeholder="Enter number"
-            value={values.number}
+            name="amount"
+            id="amount"
+            placeholder="Enter amount"
+            value={values.amount}
             onChange={handleChange}
           />
-          {errors.number && touched.number && (
-            <p className="error">{errors.number}</p>
+          {errors.amount && touched.amount && (
+            <p className="error">{errors.amount}</p>
           )}
 
           <button type="submit" className="reg-button">
-            Register{" "}
+            Process to Pay{" "}
           </button>
         </form>
       </div>

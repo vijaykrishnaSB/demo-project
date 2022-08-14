@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Reportcaseform from "./Reportform";
 import "./Reportcase.css";
-// import jsonData from '../Report/data.json';
 
 const Reportcase = () => {
   const [tabdata, setTabdata] = useState([]);
   useEffect(() => {
-    fetch("https://vijay-trustproject.herokuapp.com/reports")
+    fetch("http://localhost:4000/reports")
       .then((response) => response.json())
       .then((json) => setTabdata(json));
   }, []);
@@ -14,7 +13,6 @@ const Reportcase = () => {
   const tableRows = tabdata.map((info) => {
     return (
       <tr>
-        {/* <td>{info.id}</td> */}
         <td>{info.name}</td>
         <td>{info.emailid}</td>
         <td>{info.mobilenumber}</td>
