@@ -39,7 +39,7 @@ const Reportcaseform = () => {
       <div>
         <div className="reportform">
           <div>
-            <label> Name:</label>
+            {/* <label> Name:</label> */}
             <input
               className="input"
               name="name"
@@ -54,7 +54,7 @@ const Reportcaseform = () => {
           </div>
 
           <div>
-            <label>Email ID:</label>
+            {/* <label>Email ID:</label> */}
             <input
               className="input"
               name="email"
@@ -68,7 +68,7 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            <label>Mobile Number:</label>
+            {/* <label>Mobile Number:</label> */}
             <input
               className="input"
               name="mobilenumber"
@@ -84,7 +84,7 @@ const Reportcaseform = () => {
         </div>
         <div className="reportform">
           <div>
-            <label>Date:</label>
+            {/* <label>Date:</label> */}
             <input
               className="input"
               name="date"
@@ -97,7 +97,7 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            <label>Address:</label>
+            {/* <label>Address:</label> */}
             <input
               className="inputform"
               name="address"
@@ -113,9 +113,9 @@ const Reportcaseform = () => {
         </div>
         <div className="reportform">
           <div>
-            <label> District:</label>
+            {/* <label> District:</label> */}
             <input
-              className="input"
+              className="inputform1"
               name="district"
               type="text"
               placeholder="Enter District"
@@ -127,9 +127,9 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            <label> State:</label>
+            {/* <label> State:</label> */}
             <input
-              className="input"
+              className="inputform1"
               name="state"
               type="text"
               placeholder="Enter State"
@@ -141,9 +141,9 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            <label> Pincode:</label>
+            {/* <label> Pincode:</label> */}
             <input
-              className="input"
+              className="inputform1"
               name="pincode"
               type="number"
               placeholder="Enter Pincode"
@@ -157,12 +157,13 @@ const Reportcaseform = () => {
         </div>
         <div className="textarea">
           <div>
-            <label> Reason of Reporting:</label>
+            {/* <label> Reason of Reporting:</label> */}
             <textarea
               rows="1"
               cols="49"
               type="text"
               name="reason"
+              placeholder="Reason of Reporting"
               value={values.reason}
               onChange={handleChange}
             />

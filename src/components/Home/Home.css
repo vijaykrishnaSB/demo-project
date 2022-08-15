@@ -23,6 +23,9 @@
     background-color: rgb(93, 129, 40);
 }
 .quotes {
-    font-family: 'Rubik Marker Hatch', cursive;
+    /* font-family: 'Rubik Marker Hatch', cursive; */
+    font-family: 'Alumni Sans Inline One', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
+    font-size: 36px;
     color:red;
 }

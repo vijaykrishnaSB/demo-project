@@ -36,7 +36,7 @@ const Reportcase = () => {
 
   return (
     <div>
-      <Reportcaseform func={addRows} /> <br />
+      <Reportcaseform func={addRows} />
       <table id="table-data">
         <tr>
           <th>Name</th>
