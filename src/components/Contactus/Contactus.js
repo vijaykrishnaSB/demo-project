@@ -8,23 +8,22 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_w2sngy1",
-        "template_9s5b2mb",
-        form.current,
-        "dcWYxxIJ9vthLf0tP"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
+    emailjs.sendForm(
+      "service_w2sngy1",
+      "template_9s5b2mb",
+      form.current,
+      "dcWYxxIJ9vthLf0tP"
+    );
+    // .then(
+    //   (result) => {
+    //     console.log(result.text);
+    //     console.log("message sent");
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    //   );
+    e.target.reset();
     alert("Email sent successfully");
   };
   return (
@@ -37,16 +36,27 @@ const Contact = () => {
         <div className="form-container">
           <form ref={form} onSubmit={sendEmail}>
             <label>Name:</label>
-            <input placeholder="Enter your name" type="text" name="user_name" />
+            <input
+              placeholder="Enter your name"
+              type="text"
+              name="user_name"
+              requiredrules={[{ required: true }]}
+            />
             <label>Email:</label>
             <input
               placeholder="Enter your Email"
               type="email"
               name="user_email"
+              requiredrules={[{ required: true }]}
             />
             <label>Message:</label>
             <textarea name="message" />
-            <input className="btn-contactus" type="submit" value="Send Mail" />
+            <input
+              className="btn-contactus"
+              type="submit"
+              value="Send Mail"
+              requiredrules={[{ required: true }]}
+            />
           </form>
         </div>
       </div>

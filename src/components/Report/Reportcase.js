@@ -26,13 +26,13 @@ const Reportcase = () => {
     );
   });
 
-  const addRows = (data) => {
-    const totalReportlist = tabdata.length;
-    data.id = totalReportlist + 1;
-    const updatedReportlistData = [...tabdata];
-    updatedReportlistData.push(data);
-    setTabdata(updatedReportlistData);
-  };
+  // const addRows = (data) => {
+  //   const totalReportlist = tabdata.length;
+  //   data.id = totalReportlist + 1;
+  //   const updatedReportlistData = [...tabdata];
+  //   updatedReportlistData.push(data);
+  //   setTabdata(updatedReportlistData);
+  // };
 
   return (
     <div>

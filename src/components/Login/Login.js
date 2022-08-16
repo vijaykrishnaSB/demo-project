@@ -68,9 +68,9 @@ function LoginForm() {
           ) : null}
 
           {/* <Link to="/"> */}
-          <button type="submit" className="log-button">
-            Login
-          </button>
+            <button type="submit" className="log-button">
+              Login
+            </button>
           {/* </Link> */}
           <p>
             {" "}
