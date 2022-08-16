@@ -13,7 +13,7 @@ const RegisterForm = () => {
     })
       .then((data) => data.json())
       .then((response) => {
-        alert(response.message);
+        alert("Registration Successfully completed");
       });
   };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
@@ -25,9 +25,6 @@ const RegisterForm = () => {
     },
     validationSchema: basicSchema,
     onSubmit: (values, actions) => {
-      if (values.password === values.confirmPassword) {
-        alert("Registration Successfull");
-      }
       getuser(values);
       actions.resetForm();
     },

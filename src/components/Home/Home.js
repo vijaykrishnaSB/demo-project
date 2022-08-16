@@ -35,12 +35,12 @@ function Home({ id }) {
         </Carousel>
       </div>
       <div className="btn-homebutton">
-        {/* <button
+        <button
           className=" homebutton"
           onClick={() => navigate(`/Reports/${id}`)}
         >
           Report
-        </button> */}
+        </button>
 
         <button
           className="homebutton"

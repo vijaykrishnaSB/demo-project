@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Contactus from "./components/Contactus/Contactus";
 import About from "./components/About/About";
-// import Reportcase from "./components/Report/Reportcase";
+import Reportcase from "./components/Report/Reportcase";
 // import Reportform from "./components/Report/Reportform";
 import Donate from "./components/Donate/Donate";
 import Ourteam from "./components/Ourteam/Ourteam";
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/Reports/:id" element={<Reportform />} /> */}
+        <Route path="/Reports/:id" element={<Reportcase />} />
         <Route path="/Donates/:id" element={<Donate />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/ourteam" element={<Ourteam />} />
