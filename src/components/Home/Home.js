@@ -4,7 +4,6 @@ import "./Home.css";
 import image22 from "../../assets/image22.jpg";
 import image27 from "../../assets/image27.jpg";
 import image26 from "../../assets/image26.jpg";
-// import image32 from "../../assets/image32.png";
 import Carousel from "react-bootstrap/Carousel";
 
 function Home({ id }) {
@@ -36,12 +35,12 @@ function Home({ id }) {
         </Carousel>
       </div>
       <div className="btn-homebutton">
-        <button
+        {/* <button
           className=" homebutton"
           onClick={() => navigate(`/Reports/${id}`)}
         >
           Report
-        </button>
+        </button> */}
 
         <button
           className="homebutton"

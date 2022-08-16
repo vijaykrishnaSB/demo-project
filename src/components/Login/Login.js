@@ -67,11 +67,11 @@ function LoginForm() {
             <div className="err-msg">{errors.password}</div>
           ) : null}
 
-          <Link to="/">
+          {/* <Link to="/"> */}
           <button type="submit" className="log-button">
             Login
           </button>
-          </Link>
+          {/* </Link> */}
           <p>
             {" "}
             No account ?{" "}

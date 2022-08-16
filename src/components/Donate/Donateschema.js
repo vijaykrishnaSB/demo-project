@@ -2,7 +2,7 @@ import * as yup from "yup";
 
 export const donateSchema = yup.object().shape({
   name: yup.string().required("Required"),
-  amount: yup.number().positive().integer().max(10).required("Required"),
+  amount: yup.number().positive().integer().required("Required"),
   number: yup
     .string()
     .matches(
