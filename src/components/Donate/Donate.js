@@ -12,7 +12,6 @@ const DonateForm = () => {
     initialValues: {
       name: "",
       number: "",
-      amount: "",
     },
     validationSchema: donateSchema,
     onSubmit: (values, actions) => {
@@ -47,20 +46,20 @@ const DonateForm = () => {
           {errors.number && touched.number && (
             <p className="error">{errors.number}</p>
           )}
-          <label>Amount</label>
-          <input
-            type="number"
-            name="amount"
-            id="amount"
-            placeholder="Enter amount"
-            value={values.amount}
-            onChange={handleChange}
-          />
-          {errors.amount && touched.amount && (
-            <p className="error">{errors.amount}</p>
-          )}
+          <label>Select Amount </label><br/>
+          <select className="select-amount">
+            <option></option>
+            <option>500</option>
+            <option>1000</option>
+            <option>1500</option>
+            <option>2000</option>
+            <option>3000</option>
+            <option>5000</option>
+          </select><br/><br/>
           <StripeCheckout
             token={onToken}
+            amount="100000"
+            currency="INR"
             stripeKey="pk_test_51LWghCSHpzC9oJoTJCtwtTbOCJ5HPoQdCdVYDg2apb05jRhBIy1vuVK5pvfjumcXX2ARRAhJDNlHbGqHkcVZB6IR00pHoNYTTS"
           />
         </form>

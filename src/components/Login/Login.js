@@ -31,9 +31,9 @@ function LoginForm() {
       validationSchema: formValidationSchema,
       onSubmit: (values, actions) => {
         console.log("onSubmit", values);
-        // if (values.password === values.password) {
-        //   alert("Successfully login");
-        // }
+        if (values.password === values.password) {
+          alert("Successfully login");
+        }
         getuser(values);
         actions.resetForm();
       },
@@ -41,7 +41,7 @@ function LoginForm() {
   return (
     <div className="login-container1">
       <div className="Login-container">
-        <h2> Sign In </h2>
+        <h2> Login </h2><br/>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Email</label>
           <input

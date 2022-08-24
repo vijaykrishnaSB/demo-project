@@ -32,14 +32,14 @@ const RegisterForm = () => {
   return (
     <div className="reg-container1">
       <div className="reg-container">
-        <h3>Enter Details</h3>
+        <h3>Enter Details</h3><br/><br/>
         <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>UserName</label>
+          <label>Name</label>
           <input
             type="text"
             name="username"
             id="username"
-            placeholder="Username"
+            placeholder="Entername"
             value={values.username}
             onChange={handleChange}
           />

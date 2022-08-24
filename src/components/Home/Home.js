@@ -12,19 +12,20 @@ function Home({ id }) {
     <div>
       <div className="home">
         <Carousel>
-          <Carousel.Item>
-            <img className="home" src={image27} alt="First slide" />
-            <Carousel.Caption>
-              <h2 className="quotes" >The Beautifull Thing About Learning Is That No One Can Take It Away From You...</h2>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
+        <Carousel.Item>
             <img className="home" src={image22} alt="Second slide" />
 
             <Carousel.Caption>
               <h2 className="quotes" >A Child Without Education Is Like A Bird Without Wings...</h2>
             </Carousel.Caption>
           </Carousel.Item>
+          <Carousel.Item>
+            <img className="home" src={image27} alt="First slide" />
+            <Carousel.Caption>
+              <h2 className="quotes" >The Beautifull Thing About Learning Is That No One Can Take It Away From You...</h2>
+            </Carousel.Caption>
+          </Carousel.Item>
+         
           <Carousel.Item>
             <img className="home " src={image26} alt="Third slide" />
 
@@ -39,14 +40,14 @@ function Home({ id }) {
           className=" homebutton"
           onClick={() => navigate(`/Reports/${id}`)}
         >
-          Report
+          Report a case
         </button>
 
         <button
           className="homebutton"
-          onClick={() => navigate(`/Donates/${id}`)}
+          onClick={() => navigate(`Donatation`)}
         >
-          Donate
+          Donatation
         </button>
       </div>
     </div>

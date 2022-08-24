@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import Contactus from "./components/Contactus/Contactus";
 import About from "./components/About/About";
 import Reportcase from "./components/Report/Reportcase";
-// import Reportform from "./components/Report/Reportform";
+import Donatation from "./components/Donate/Donatation";
 import Donate from "./components/Donate/Donate";
 import Ourteam from "./components/Ourteam/Ourteam";
 import Footer from "./components/Footers/Footer";
@@ -21,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/Reports/:id" element={<Reportcase />} />
         <Route path="/Donates/:id" element={<Donate />} />
+        <Route path="/donatation" element={<Donatation />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/ourteam" element={<Ourteam />} />
         <Route path="/login" element={<Login />} />

@@ -13,10 +13,10 @@
 .donate-container input {
     width: 350px;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 6px 0;
     display: block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -29,3 +29,58 @@
     height: 100vh;
     padding-top: 10vh;
 }
+
+.select-amount{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.donatebutton {
+    width: 100px;
+    justify-content: left;
+    align-items: left;
+    background: transparent;
+    border:1px solid white;
+    color: white;
+}
+
+.donatebutton:hover {
+    background-color:rgb(71, 187, 71);
+}
+.donate-image{
+    width: 370px;
+    padding-top: 10px;
+}
+
+
+.donatation-list {
+    /* padding-top: 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    height: 180vh;
+
+}
+.donatation-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: cover;
+    width:400px;
+    background: rgb(2, 6, 28);
+    box-shadow: 1px 1px 2px 2px  rgb(28, 27, 27);
+    padding: 10px;
+    border-radius: 5px;
+    margin:20px;
+    transition: transform 0.2s;
+    color:white;
+}
+.donatation-container:hover {
+    transform: translatey(1rem)
+}
+

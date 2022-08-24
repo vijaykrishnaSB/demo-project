@@ -16,7 +16,7 @@
     height: 8vh;
     font-size: 25px;
     border: 2px solid black;
-    background: navy;
+    background: rgb(2, 6, 28);
     color: white;
 }
 .homebutton:hover {
