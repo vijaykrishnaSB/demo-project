@@ -1,6 +1,7 @@
 import React from "react";
 import "./Ourteam.css";
 import image8 from "../../assets/image8.jpg";
+import image55 from "../../assets/image55.jpg";
 import image11 from "../../assets/image11.jpg";
 import image12 from "../../assets/image12.jpg";
 import image13 from "../../assets/image13.jpg";
@@ -15,11 +16,11 @@ const Ourteam = () => {
   return (
     <div className="ourteam-container">
       <div className="team-container">
-        <img className="our-container" src={image8} alt="" />
-        <h1 className="ourteam-title">Our Team</h1>
+        <img className="our-container" src={image55} alt="" />
+        {/* <h1 className="ourteam-title">Our Team</h1>
         <h4 className="allourteam-title">
           our team put full effort to fulfill our & your goals!!
-        </h4>
+        </h4> */}
         <br></br>
         <div className="member-list">
           <div className="managment-container">
@@ -69,7 +70,6 @@ const Ourteam = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

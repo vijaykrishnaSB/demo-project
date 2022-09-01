@@ -37,3 +37,12 @@
     height: 115vh;
     padding-top: 10vh;
 }
+.register-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:330px;
+    bottom:0;
+    height:100%;
+    right:590px ;
+}

@@ -67,3 +67,9 @@
 .btn-reportcase:hover{
     background:rgb(71, 187, 71);
 }
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:orangered;
+}

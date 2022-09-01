@@ -38,6 +38,7 @@ const Reportcaseform = () => {
   return (
     <form onSubmit={handleSubmit} className="allreports">
       <div>
+        <h3>Report a case here who needs Help, Care & Protection</h3>
         <div className="reportform">
           <div>
             {/* <label> Name:</label> */}

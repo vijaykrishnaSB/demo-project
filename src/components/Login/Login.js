@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { useFormik } from "formik";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 const formValidationSchema = yup.object({
   email: yup.string().required("Required Email"),
@@ -10,6 +12,17 @@ const formValidationSchema = yup.object({
 });
 
 function LoginForm() {
+  const [passwordType, setPasswordType] = useState("password");
+  const [passwordIcon, setPasswordIcon] = useState(<FaEyeSlash />);
+  const handleToggle = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      setPasswordIcon(FaEye);
+    } else {
+      setPasswordType("password");
+      setPasswordIcon(FaEyeSlash);
+    }
+  };
   const getuser = (values) => {
     console.log(values);
     fetch("http://localhost:4000/users/login", {
@@ -31,9 +44,9 @@ function LoginForm() {
       validationSchema: formValidationSchema,
       onSubmit: (values, actions) => {
         console.log("onSubmit", values);
-        if (values.password === values.password) {
-          alert("Successfully login");
-        }
+        // if (values.password === values.password) {
+        //   alert("Successfully login");
+        // }
         getuser(values);
         actions.resetForm();
       },
@@ -41,7 +54,7 @@ function LoginForm() {
   return (
     <div className="login-container1">
       <div className="Login-container">
-        <h2> Login </h2><br/>
+        <h5> Log in to your Trust Account </h5><br/>
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Email</label>
           <input
@@ -57,12 +70,15 @@ function LoginForm() {
 
           <label>Password</label>
           <input
-            type="password"
+            type={passwordType}
             name="password"
             value={values.password}
             onChange={handleChange}
             onBlur={handleBlur}
           />
+           <span className="login-icon" onClick={handleToggle}>
+            {passwordIcon}
+          </span>
           {touched.password && errors.password ? (
             <div className="err-msg">{errors.password}</div>
           ) : null}
@@ -74,7 +90,7 @@ function LoginForm() {
           {/* </Link> */}
           <p>
             {" "}
-            No account ?{" "}
+            Dont have an account ?{" "}
             <Link to="/register">
               {" "}
               <span style={{ color: "blue" }}>Register</span>

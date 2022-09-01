@@ -1,10 +1,24 @@
 // import { TouchAppRounded } from "@mui/icons-material";
 import { useFormik } from "formik";
-import React from "react";
+import React, {useState}from "react";
+import { Link } from "react-router-dom";
 import "./Register.css";
 import { basicSchema } from "./schema";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 const RegisterForm = () => {
+  const [passwordType, setPasswordType] = useState("password");
+  const [passwordIcon, setPasswordIcon] = useState(<FaEyeSlash />);
+  const handleToggle = () => {
+    if (passwordType === "password") {
+      setPasswordType("text");
+      setPasswordIcon(FaEye);
+    } else {
+      setPasswordType("password");
+      setPasswordIcon(FaEyeSlash);
+    }
+  };
   const getuser = (values) => {
     fetch("http://localhost:4000/users/signup", {
       method: "POST",
@@ -18,7 +32,7 @@ const RegisterForm = () => {
   };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: {
-      username: "",
+      name: "",
       email: "",
       password: "",
       confirmPassword: "",
@@ -32,19 +46,21 @@ const RegisterForm = () => {
   return (
     <div className="reg-container1">
       <div className="reg-container">
-        <h3>Enter Details</h3><br/><br/>
+        <h5>Register here for your Trust account</h5>
+        <br />
+        <br />
         <form autoComplete="off" onSubmit={handleSubmit}>
           <label>Name</label>
           <input
             type="text"
-            name="username"
-            id="username"
+            name="name"
+            id="name"
             placeholder="Entername"
-            value={values.username}
+            value={values.name}
             onChange={handleChange}
           />
-          {errors.username && touched.username && (
-            <p className="error">{errors.username}</p>
+          {errors.name && touched.name && (
+            <p className="error">{errors.name}</p>
           )}
           <label>Email</label>
           <input
@@ -74,13 +90,16 @@ const RegisterForm = () => {
 
           <label>Confirm Password</label>
           <input
-            type="password"
+            type={passwordType}
             name="confirmPassword"
             id="confirmPassword"
             placeholder="Confirm password"
             value={values.confirmPassword}
             onChange={handleChange}
           />
+          <span className="register-icons" onClick={handleToggle}>
+            {passwordIcon}
+          </span>
           {errors.confirmPassword && touched.confirmPassword && (
             <p className="error">{errors.confirmPassword}</p>
           )}
@@ -88,6 +107,14 @@ const RegisterForm = () => {
           <button type="submit" className="reg-button">
             Register{" "}
           </button>
+          <p>
+            {" "}
+            Already have an account ?{" "}
+            <Link to="/login">
+              {" "}
+              <span style={{ color: "blue" }}>Login</span>
+            </Link>
+          </p>
         </form>
       </div>
     </div>

@@ -6,7 +6,6 @@
     width: 550px;
     flex-direction: column;
     border: 2px solid black;
-    /* background:rgb(0, 0, 0); */
     margin-left: 70vh;
     border-radius: 12px;
 
@@ -38,6 +37,15 @@
     /* background-image: url("../../assets/image51.jpg"); */
     height: 100vh;
     padding-top: 20vh;
+}
+.login-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:155px;
+    bottom:0;
+    height:100%;
+    right:610px ;
 }
 
 
