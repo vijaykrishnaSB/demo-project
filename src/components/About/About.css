@@ -5,8 +5,8 @@
     justify-content: center;
     flex-direction: column;
     height:800px;
-    color: black;
-    /* background:rgb(4, 13, 57); */
+    color:white;
+    background: black;
 }
 
 .image {
@@ -22,7 +22,7 @@
     border-radius: 5px;
     margin:20px;
     transition: transform 0.2s;
-    border:2px solid white;
+    border:2px solid red;
 }
 .managmentcontainer:hover {
     transform: translatey(1rem)
@@ -45,9 +45,6 @@
     align-items: center;
     justify-content: center;
 }
-/* .about-container h2{
-    color:white;
-} */
 
 .about-container p{
     margin: 20px 0px;

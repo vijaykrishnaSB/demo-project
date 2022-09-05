@@ -3,16 +3,16 @@
     height: 800px;
     width: 100%;
     justify-content: center;
-    /* background:rgb(4, 13, 57); */
+    background:black;
     color: black;
 }
 .form-container {
     display: flex;
     padding-top: 50px;
     /* color: white; */
-    /* border: 2px solid red; */
+    border: 2px solid red;
     background:rgb(4, 13, 57);
-    box-shadow: 1px 1px 2px 2px  rgb(28, 27, 27);
+    /* box-shadow: 1px 1px 2px 2px  rgb(28, 27, 27); */
 
     width: 550px;
     height: 60vh;
@@ -43,6 +43,9 @@
 .contactuspage {
     text-align: center;
     padding-top: 100px;
+}
+.contactuspage h3{
+    color:white;
 }
 
 .btn-contactus {

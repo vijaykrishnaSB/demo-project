@@ -5,7 +5,10 @@
     height: 60vh;
     width: 550px;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid red;
+    background:rgb(4, 13, 57);
+
+    color: white;
     margin-left: 70vh;
     border-radius: 12px;
 
@@ -32,9 +35,7 @@
 }
 
 .login-container1 {
-    background: linear-gradient(180deg,white,rgb(160, 192, 204));
-    /* background:rgb(4, 13, 57); */
-    /* background-image: url("../../assets/image51.jpg"); */
+    background:black;
     height: 100vh;
     padding-top: 20vh;
 }
@@ -50,5 +51,5 @@
 
 
 .err-msg {
-    color: rgb(165, 6, 6);
+    color: goldenrod;
 }

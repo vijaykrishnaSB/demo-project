@@ -16,9 +16,9 @@ const Ourteam = () => {
   return (
     <div className="ourteam-container">
       <div className="team-container">
-        <img className="our-container" src={image55} alt="" />
-        {/* <h1 className="ourteam-title">Our Team</h1>
-        <h4 className="allourteam-title">
+        {/* <img className="our-container" src={image55} alt="" /> */}
+        <h1 className="ourteam-title">Our Team</h1>
+        {/* <h4 className="allourteam-title">
           our team put full effort to fulfill our & your goals!!
         </h4> */}
         <br></br>

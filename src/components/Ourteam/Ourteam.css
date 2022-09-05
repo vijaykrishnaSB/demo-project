@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    background: black;
 }
 .team-container {
     display: flex;
@@ -15,16 +16,16 @@
     height: 55vh;
     object-fit: cover;
 }
-/* .ourteam-title {
+.ourteam-title {
     position: absolute;
-    top:10%;
-    left:30%;
+    top:5%;
+    left:40%;
     font-size: 50px;
     color:black;
     font-family: 'Rubik Moonrocks', cursive;
-    color: red;
+    color: white;
 }
-.allourteam-title {
+/* .allourteam-title {
     position: absolute;
     top:16%;
     left:30%;
@@ -40,8 +41,8 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    height: 100vh;
-    /* background-image: url("../../assets/image55.jpg"); */
+    /* height: 100vh; */
+    padding-top: 15vh;
 
 }
 .managment-container {
@@ -51,7 +52,7 @@
     object-fit: cover;
     width:200px;
     background: rgb(2, 6, 28);
-    box-shadow: 1px 1px 2px 2px  rgb(28, 27, 27);
+    border:2px solid red;
     padding: 10px;
     border-radius: 5px;
     margin:20px;

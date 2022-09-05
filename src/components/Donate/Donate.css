@@ -6,7 +6,9 @@
     width: 500px;
     flex-direction: column;
     margin-left: 70vh;
-    border: 2px solid black;
+    background:rgb(4, 13, 57);
+    border: 2px solid red;
+    color: white;
     border-radius: 12px;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .donate-container1 {
-    background: linear-gradient(180deg,white,rgb(160, 192, 204)) ;
+    background: black;
     height: 100vh;
     padding-top: 10vh;
 }
@@ -64,6 +66,7 @@
     justify-content: center;
     grid-template-columns: auto auto auto;
     height: 180vh;
+    background:black;
 
 }
 .donatation-container {
@@ -72,8 +75,8 @@
     flex-direction: column;
     object-fit: cover;
     width:400px;
-    background: rgb(2, 6, 28);
-    box-shadow: 1px 1px 2px 2px  rgb(28, 27, 27);
+    /* background:rgb(4, 13, 57); */
+    /* background: rgb(2, 6, 28); */
     padding: 10px;
     border-radius: 5px;
     margin:20px;
