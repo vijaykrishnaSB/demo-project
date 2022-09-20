@@ -46,7 +46,7 @@ const Reportcaseform = () => {
               className="input"
               name="name"
               type="text"
-              placeholder="Enter Fullname"
+              placeholder="Enter Name"
               value={values.name}
               onChange={handleChange}
             />
@@ -61,7 +61,7 @@ const Reportcaseform = () => {
               className="input"
               name="emailid"
               type="email"
-              placeholder="Enter emailid"
+              placeholder="Enter email"
               value={values.emailid}
               onChange={handleChange}
             />
@@ -75,7 +75,7 @@ const Reportcaseform = () => {
               className="input"
               name="mobilenumber"
               type="number"
-              placeholder="number"
+              placeholder="Contact number"
               value={values.mobilenumber}
               onChange={handleChange}
             />

@@ -8,7 +8,10 @@
     color:white;
     background: black;
 }
-
+.about-container h2{
+    font-size: 30px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
 .image {
     width:180px;
 }
@@ -22,7 +25,8 @@
     border-radius: 5px;
     margin:20px;
     transition: transform 0.2s;
-    border:2px solid red;
+    /* border:2px solid white; */
+    box-shadow:2px 2px white;
 }
 .managmentcontainer:hover {
     transform: translatey(1rem)

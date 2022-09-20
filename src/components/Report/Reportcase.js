@@ -4,15 +4,15 @@ import "./Reportcase.css";
 
 const Reportcase = () => {
   const [tabdata, setTabdata] = useState([]);
-  // useEffect(() => {
-    fetch("http://localhost:4000/reports",{
+  useEffect(() => {
+    fetch("http://localhost:4000/reports", {
       method: "GET",
       body: JSON.stringify(),
       headers: { "Content-Type": "application/json" },
     })
       .then((response) => response.json())
       .then((json) => setTabdata(json));
-  // }, []);
+  }, []);
 
   const tableRows = tabdata.map((info) => {
     return (
