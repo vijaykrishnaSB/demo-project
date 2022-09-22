@@ -1,11 +1,10 @@
 // import { TouchAppRounded } from "@mui/icons-material";
 import { useFormik } from "formik";
-import React, {useState}from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import { basicSchema } from "./schema";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
 
 const RegisterForm = () => {
   const [passwordType, setPasswordType] = useState("password");
@@ -20,7 +19,7 @@ const RegisterForm = () => {
     }
   };
   const getuser = (values) => {
-    fetch("http://localhost:4000/users/signup", {
+    fetch("https://vijay-trustproject.herokuapp.com/users/signup", {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },
