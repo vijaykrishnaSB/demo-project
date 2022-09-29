@@ -38,7 +38,7 @@ function Home({ id }) {
       <div className="btn-homebutton">
         <button
           className=" homebutton"
-          onClick={() => navigate(`/Reports/${id}`)}
+          onClick={() => navigate(`/Reports`)}
         >
           Report a case
         </button>
