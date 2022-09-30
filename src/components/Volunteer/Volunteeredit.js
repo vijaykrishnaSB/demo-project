@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { useFormik } from "formik";
 import "./Volunteer.css";
@@ -9,14 +9,14 @@ const Volunteerfrom = () => {
   const params = useParams();
 
   useEffect(() => {
-    fetchdata();
+    gettingdata();
   }, []);
-  let fetchdata = async () => {
-    let a = await axios.get(
+  const gettingdata = async () => {
+    const gettingVolunteer= await axios.get(
       `https://vijay-trustproject.herokuapp.com/volunteer/posting/${params.id}`,
       {}
     );
-    formik.setValues(a.data);
+    formik.setValues(gettingVolunteer.data);
   };
   const formik = useFormik({
     initialValues: {

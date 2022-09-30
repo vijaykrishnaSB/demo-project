@@ -2,10 +2,8 @@ import React from "react";
 import { useFormik } from "formik";
 import "./Volunteer.css";
 import { Volunteerschema } from "./Volunteerschema";
-import { useParams } from "react-router-dom";
 
 const Volunteerfrom = () => {
-  const params = useParams();
   const getuser = (values) => {
     console.log(values);
     fetch("https://vijay-trustproject.herokuapp.com/volunteer/posting", {
@@ -33,9 +31,6 @@ const Volunteerfrom = () => {
       actions.resetForm();
     },
   });
-  const imageUpload = () => {
-    console.log("vk");
-  };
   return (
     <form onSubmit={handleSubmit} className="allvolunteer">
       <div>
