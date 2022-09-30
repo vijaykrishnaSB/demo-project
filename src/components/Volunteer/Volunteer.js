@@ -15,7 +15,7 @@ const Volunteerfrom = () => {
     })
       .then((data) => data.json())
       .then((response) => {
-        alert("Added successfully");
+        alert("Thank you for joining!!");
       });
   };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
