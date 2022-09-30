@@ -14,15 +14,7 @@ const Contact = () => {
       form.current,
       "dcWYxxIJ9vthLf0tP"
     );
-    // .then(
-    //   (result) => {
-    //     console.log(result.text);
-    //     console.log("message sent");
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    //   );
+   
     e.target.reset();
     alert("Email sent successfully");
   };
@@ -31,8 +23,6 @@ const Contact = () => {
       <div className="contactuspage">
         <h3>Contact Us</h3>
         <br /><br/>
-        {/* <h5>Trustmail@gmail.com</h5> */}
-        {/* <h5>Plot no:99,123 Street,Trust Road,India</h5> */}
         <div className="form-container">
           <form ref={form} onSubmit={sendEmail}>
             <label>Name:</label>

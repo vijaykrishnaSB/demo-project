@@ -25,13 +25,7 @@
     font-family: 'Rubik Moonrocks', cursive;
     color: white;
 }
-/* .allourteam-title {
-    position: absolute;
-    top:16%;
-    left:30%;
-    font-size:20px;
-    font-family: 'Dancing Script', cursive;
-} */
+
 
 .member-list {
     padding-top: 15px;
@@ -41,7 +35,6 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    /* height: 100vh; */
     padding-top: 15vh;
 
 }
@@ -52,7 +45,6 @@
     object-fit: cover;
     width:200px;
     background: rgb(2, 6, 28);
-    /* border:2px solid white; */
     box-shadow:2px 2px white;
     padding: 10px;
     border-radius: 5px;
