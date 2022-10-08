@@ -1,28 +1,31 @@
-.footer-container1 {
-    display: flex;
-    justify-content: center;
-    min-height: 100%;
-}
 .footer-container {
     display: flex;
-    width: 100%;
-    background: rgb(28, 27, 27);
-    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 15px; */
+    background-color:rgb(28, 27, 27);
     color:rgb(230, 170, 19);
+
 }
-.footer-contact {
-    align-items:flex-end;
-    padding: 25px;
-    padding-left: 100px;
-}
-.social-media {
-    padding-left: 300px;
-    padding-top: 40px;
-}
-.copyright{
+.footer-media{
     display: flex;
-    padding-top: 140px;
-    font-size: 15px;
-    padding-left: 100px;
+    align-items:center ;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 40px;
+    transition: transform .4s;
+}
+.footer-media a:hover{
+    transform: scale(1.2);
+
+}
+.footer-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
     font-family: 'IBM Plex Serif', serif;
+
 }

@@ -45,7 +45,7 @@ const About = () => {
           <h3>Mahathma Gandhi</h3>
           <h4>Co-Founder</h4>
           <p>
-            Mohandas Karamchand Gandhi was an Indian lawyer, and political
+            Gandhi was an Indian lawyer, and political
             ethicist who employed nonviolent resistance to lead the successful
             campaign for India's independence from British rule, and to later
             inspire movements for civil rights and freedom across the world.
