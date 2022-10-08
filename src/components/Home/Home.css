@@ -11,8 +11,11 @@
     gap: 10%;
 }
 .homebutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius:25px;
-    width: 15%;
+    width: 200px;
     height: 8vh;
     font-size: 25px;
     background:rgb(4, 13, 57);

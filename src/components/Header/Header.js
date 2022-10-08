@@ -1,14 +1,21 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./Header.css";
+import DehazeIcon from "@mui/icons-material/Dehaze";
+
 
 function Header() {
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <nav className="header-container">
       <div className="trust">
         <h1 className="logo">Trust </h1>
       </div>
 
-      <ul className="nav-items">
+      <ul
+        className={isMobile ? "nav-links-mobiles" : "nav-links"}
+        onClick={() => setIsMobile(false)}
+      >
         <li>
           <Link className="link-item" to="/">
             Home
@@ -40,6 +47,17 @@ function Header() {
           </Link>
         </li>
       </ul>
+      <button
+        className="mobile-menu-icon"
+        onClick={() => setIsMobile(!isMobile)}
+      >
+        <DehazeIcon sx={{ color: "white" }} />
+        {isMobile ? (
+          <i className="fas fa-time"></i>
+        ) : (
+          <i className="fas fa-bar"></i>
+        )}
+      </button>
     </nav>
   );
 }

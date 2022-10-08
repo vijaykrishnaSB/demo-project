@@ -10,7 +10,8 @@ import ElderlyIcon from "@mui/icons-material/Elderly";
 const About = () => {
   return (
     <div className="about-container">
-      <h2>Trustees</h2><br/>
+      <h2>Trustees</h2>
+      <br />
       {/* <h6>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
