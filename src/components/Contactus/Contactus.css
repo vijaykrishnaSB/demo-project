@@ -3,8 +3,6 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-    /* height: 800px; */
-    /* width: 100%; */
     justify-content: center;
     background:black;
     color: black;
@@ -16,22 +14,19 @@
     padding: 20px;
     border: 2px solid red;
     background:rgb(4, 13, 57);
-    /* width: 550px; */
-    /* height: 60vh; */
-    /* padding-left: 60px; */
     border-radius: 10px;
 
 }
 
 .form-container textarea {
-    width: 400px;
+    width: 300px;
     max-height: 100px;
     min-height: 100px;
     border-radius: 5px;
     font-size: 15px;
 }
 .form-container input {
-    width: 400px;
+    width: 300px;
     height: 45px;
     padding: 10px;
     border-radius: 10px;
