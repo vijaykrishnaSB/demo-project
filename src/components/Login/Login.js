@@ -76,18 +76,16 @@ function LoginForm() {
             onChange={handleChange}
             onBlur={handleBlur}
           />
-           <span className="login-icon" onClick={handleToggle}>
+           {/* <span className="login-icon" onClick={handleToggle}>
             {passwordIcon}
-          </span>
+          </span> */}
           {touched.password && errors.password ? (
             <div className="err-msg">{errors.password}</div>
           ) : null}
 
-          {/* <Link to="/"> */}
             <button type="submit" className="log-button">
               Login
             </button>
-          {/* </Link> */}
           <p>
             {" "}
             Dont have an account ?{" "}

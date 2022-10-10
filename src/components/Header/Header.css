@@ -18,6 +18,9 @@
     color: rgb(230, 170, 19);
     text-decoration: none;
 }
+.link-item:hover{
+    color:white;
+}
 
 .trust h1 {
     display: flex;
@@ -52,7 +55,6 @@
     }
     .link-item {
         display: flex;
-        color: white;
         align-items: center;
         justify-content: center;
         padding: 5px;
@@ -62,10 +64,14 @@
         display: block;
         position: absolute;
         color: white;
-        background-color:black;
+        background-color:transparent;
         border: none;
         outline: none;
         top: 15px;
         right: 25px;
     }
+    .header-container li{
+        list-style: none;
+    }
+    
 }

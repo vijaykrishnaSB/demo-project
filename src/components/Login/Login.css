@@ -2,17 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     width: 550px;
+    padding: 50px;
     flex-direction: column;
     border: 2px solid red;
     background:rgb(4, 13, 57);
-
     color: white;
-    margin-left: 70vh;
     border-radius: 12px;
-
-
 }
 
 .Login-container input {
@@ -24,7 +20,23 @@
     border-radius: 10px;
     box-sizing: border-box;
 }
+/* .Login-container .login-icon{
+    display: flex;
+    justify-content: center;
+    color: red;
+    padding-left: 260px;
+} */
 
+/* .login-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:225px;
+    bottom:0;
+    height:100%;
+    right:620px ;
+    color:black;
+} */
 .log-button {
     background-color: green;
     height: 44px;
@@ -35,19 +47,12 @@
 }
 
 .login-container1 {
-    background:black;
-    height: 100vh;
-    padding-top: 20vh;
-}
-.login-icon {
     display: flex;
     align-items: center;
-    position: absolute;
-    top:155px;
-    bottom:0;
-    height:100%;
-    right:610px ;
-    color:black;
+    justify-content: center;
+    background:black;
+    height: 90vh;
+    padding-top: 10px;
 }
 
 

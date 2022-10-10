@@ -52,11 +52,6 @@ function Header() {
         onClick={() => setIsMobile(!isMobile)}
       >
         <DehazeIcon sx={{ color: "white" }} />
-        {isMobile ? (
-          <i className="fas fa-time"></i>
-        ) : (
-          <i className="fas fa-bar"></i>
-        )}
       </button>
     </nav>
   );

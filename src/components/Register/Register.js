@@ -96,9 +96,9 @@ const RegisterForm = () => {
             value={values.confirmPassword}
             onChange={handleChange}
           />
-          <span className="register-icons" onClick={handleToggle}>
+          {/* <span className="register-icons" onClick={handleToggle}>
             {passwordIcon}
-          </span>
+          </span> */}
           {errors.confirmPassword && touched.confirmPassword && (
             <p className="error">{errors.confirmPassword}</p>
           )}
