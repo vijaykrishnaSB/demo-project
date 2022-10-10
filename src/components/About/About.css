@@ -1,20 +1,16 @@
 .about-container {
     display: flex;
     align-items: center;
-    font-size: 18PX;
     justify-content: center;
     flex-direction: column;
-    height:800px;
     color:white;
+    padding: 40px;
     background: black;
 }
 .about-container h2{
-    font-size: 30px;
     font-family: 'Rubik Moonrocks', cursive;
 }
-.image {
-    width:180px;
-}
+
 .managmentcontainer {
     display: flex;
     justify-content: center;
@@ -25,8 +21,7 @@
     border-radius: 5px;
     margin:20px;
     transition: transform 0.2s;
-    /* border:2px solid white; */
-    box-shadow:2px 2px white;
+    border:2px solid white;
 }
 .managmentcontainer:hover {
     transform: translatey(1rem)
@@ -58,4 +53,12 @@
 }
  .icon {
     color:white;
+ }
+ @media (max-width: 768px) {
+    .Appcard{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto ;
+    }
  }

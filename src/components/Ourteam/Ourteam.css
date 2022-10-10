@@ -2,8 +2,8 @@
     display: flexbox;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
     background: black;
+    padding-top: 20px;
 }
 .team-container {
     display: flex;
@@ -17,9 +17,9 @@
     object-fit: cover;
 }
 .ourteam-title {
-    position: absolute;
-    top:5%;
-    left:45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 30px;
     color:black;
     font-family: 'Rubik Moonrocks', cursive;
@@ -29,13 +29,12 @@
 
 .member-list {
     padding-top: 15px;
-    display: flex;
     flex-wrap: wrap;
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    padding-top: 15vh;
+    padding-top: 10px;
 
 }
 .managment-container {
@@ -63,4 +62,12 @@
 .mangment-container h6{
     color: rgb(61, 55, 55);
     margin: 5px 0px;
+}
+@media (max-width: 780px) {
+    .member-list {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto ;
+    }
 }
