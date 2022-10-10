@@ -15,21 +15,6 @@
     gap:20px;
 }
 
-.textarea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 80px;
-    padding: 25px;
-}
-.textarea textarea {
-    padding: 10px;
-    border: 2px solid ;
-    resize: none;
-    height:10vh;
-    width: 945px;
-    border-radius:5px ;
-}
 .input {
     padding:10px;
     height:45px;
@@ -62,11 +47,10 @@
     width: 180px;
     height: 7vh;
     border-radius: 15px;
-    border: 2px solid black;
-    box-shadow: 1px 3px black;
+    border: 2px solid green;
 }
 .btn-volunteerform:hover{
-    background:rgb(71, 187, 71);
+    background:green;
 }
 
 

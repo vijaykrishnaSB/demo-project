@@ -4,6 +4,7 @@
     width: 100%;
     padding: 20px;
     flex-direction: column;
+    border: 1px solid gold;
     background:rgb(4, 13, 57);
 
 }
@@ -14,7 +15,9 @@
     padding: 25px;
     gap:20px;
 }
-
+.reportform input{
+    border: 2px solid ;
+}
 .textarea {
     display: flex;
     align-items: center;
@@ -24,7 +27,6 @@
 }
 .textarea textarea {
     padding: 10px;
-    border: 2px solid ;
     resize: none;
     height:10vh;
     width: 945px;
@@ -62,11 +64,10 @@
     width: 180px;
     height: 7vh;
     border-radius: 15px;
-    border: 2px solid black;
-    box-shadow: 1px 3px black;
+    border: 2px solid green;
 }
 .btn-reportcase:hover{
-    background:rgb(71, 187, 71);
+    background:green;
 }
 h3 {
     display: flex;

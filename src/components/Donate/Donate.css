@@ -6,7 +6,7 @@
     flex-direction: column;
     background:rgb(4, 13, 57);
     border: 2px solid red;
-    color: white;
+    color: whitesmoke;
     border-radius: 12px;
     padding: 40px;
 }
@@ -40,16 +40,18 @@
 }
 
 .donatebutton {
-    width: 100px;
+    width: 150px;
     justify-content: left;
     align-items: left;
     background: transparent;
-    border:1px solid white;
+    border:1px solid blue;
+    border-radius: 10px;
     color: white;
 }
 
 .donatebutton:hover {
-    background-color:rgb(71, 187, 71);
+    background-color:green;
+    color: black;
 }
 .donate-image{
     width: 370px;
@@ -67,6 +69,9 @@
     grid-template-columns: auto auto auto;
     background:black;
 
+}
+.donatation-container h4{
+    color: rgb(230, 170, 19);
 }
 .donatation-container {
     display: flex;
@@ -86,5 +91,7 @@
 @media (max-width: 780px) {
     .donatation-list {
         display: block;
+        align-items: center;
+        justify-content: center;
     }
 }

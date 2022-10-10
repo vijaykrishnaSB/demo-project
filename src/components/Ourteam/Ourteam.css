@@ -44,7 +44,7 @@
     object-fit: cover;
     width:200px;
     background: rgb(2, 6, 28);
-    box-shadow:2px 2px white;
+    border: 2px solid red;
     padding: 10px;
     border-radius: 5px;
     margin:20px;
@@ -52,7 +52,8 @@
     color:white;
 }
 .managment-container:hover {
-    transform: translatey(1rem)
+    transform: translatey(1rem);
+    border: 2px solid gold;
 }
 
 .mangment-container h4{
