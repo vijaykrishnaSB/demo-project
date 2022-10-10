@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
     flex-direction: column;
     background:rgb(4, 13, 57);
     border: 2px solid red;
@@ -12,14 +11,19 @@
 }
 
 .donate-container input {
-    width: 350px;
+    width: 310px;
     padding: 12px 20px;
     display: block;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
 }
-
+.select-amount{
+    width: 310px;
+    height: 50px;
+    padding: 10px;
+    border-radius:10px;
+}
 .error {
     color: red;
 }
@@ -29,15 +33,10 @@
     align-items: center;
     justify-content: center;
     background: black;
-    height: 100vh;
+    height: 80vh;
 }
 
-.select-amount{
-    width: 350px;
-    height: 50px;
-    padding: 10px;
-    border-radius:10px;
-}
+
 
 .donatebutton {
     width: 150px;

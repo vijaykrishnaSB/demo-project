@@ -19,6 +19,7 @@
 }
 
 .form-container textarea {
+    display: flex;
     width: 320px;
     max-height: 100px;
     min-height: 100px;
@@ -26,6 +27,7 @@
     font-size: 15px;
 }
 .form-container input {
+    display: flex;
     width: 320px;
     height: 45px;
     padding: 10px;
@@ -38,7 +40,8 @@
     color:white;
 }
 .contactuspage {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     padding-top: 100px;
 }
 .contactuspage h3{
