@@ -8,14 +8,24 @@
     background:rgb(4, 13, 57);
 
 }
+@media (max-width:767px) {
+    .allvolunteer{
+        align-items: center;
+    }
+}
 .volunteerform {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 20px;
     gap:20px;
 }
-
+@media(max-width: 780px){
+    .volunteerform{
+        display:block;
+        padding: 1px;
+    }
+}
 .input {
     padding:10px;
     height:45px;
@@ -44,11 +54,24 @@
     display: flex;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .btn-volunteer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .btn-volunteerform{
     width: 180px;
     height: 7vh;
     border-radius: 15px;
     border: 2px solid green;
+}
+@media (max-width: 767px) {
+    .btn-volunteerform{
+        width: 100px;
+        height: 5vh;
+    }
 }
 .btn-volunteerform:hover{
     background:green;
