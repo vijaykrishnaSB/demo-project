@@ -8,12 +8,23 @@
     background:rgb(4, 13, 57);
 
 }
+@media (max-width:767px){
+    .allreports{
+        height: auto;
+    }
+}
 .reportform {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 25px;
     gap:20px;
+}
+@media (max-width:767px){
+    .reportform{
+        display: block;
+        padding: 2px;
+    }
 }
 .reportform input{
     border: 2px solid ;
@@ -32,26 +43,37 @@
     width: 945px;
     border-radius:5px ;
 }
+@media (max-width: 767px){
+    .textarea textarea{
+        width: 100%;
+    }
+    .textarea{
+        padding: 2px;
+    }
+}
 .input {
     padding:10px;
     height:45px;
     width: 300px;
-    border-radius:8px ;
+    border-radius:8px;
 }
 .inputform{
     padding:10px;
     width: 620px;
     height:45px;
-    border-radius:8px ;
-
+    border-radius:8px;
 }
-.inputform1{
+@media (max-width:767px){
+    .inputform{
+        width:90%;
+    }
+}
+/* .inputform1{
     padding:10px;
     height:45px;
     width: 300px;
     border-radius:8px ;
-
-}
+} */
 
 .btn-report {
     width: 100%;

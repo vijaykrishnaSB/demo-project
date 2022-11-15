@@ -41,7 +41,6 @@ const Reportcaseform = () => {
         <h3>Report a case here who needs Help, Care & Protection</h3>
         <div className="reportform">
           <div>
-            {/* <label> Name:</label> */}
             <input
               className="input"
               name="name"
@@ -56,7 +55,6 @@ const Reportcaseform = () => {
           </div>
 
           <div>
-            {/* <label>Email ID:</label> */}
             <input
               className="input"
               name="emailid"
@@ -70,7 +68,6 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            {/* <label>Mobile Number:</label> */}
             <input
               className="input"
               name="mobilenumber"
@@ -86,7 +83,6 @@ const Reportcaseform = () => {
         </div>
         <div className="reportform">
           <div>
-            {/* <label>Date:</label> */}
             <input
               className="input"
               name="date"
@@ -99,7 +95,6 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            {/* <label>Address:</label> */}
             <input
               className="inputform"
               name="address"
@@ -115,7 +110,6 @@ const Reportcaseform = () => {
         </div>
         <div className="reportform">
           <div>
-            {/* <label> District:</label> */}
             <input
               className="input"
               name="district"
@@ -129,7 +123,6 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            {/* <label> State:</label> */}
             <input
               className="input"
               name="state"
@@ -143,7 +136,6 @@ const Reportcaseform = () => {
             )}
           </div>
           <div>
-            {/* <label> Pincode:</label> */}
             <input
               className="input"
               name="pincode"
@@ -159,7 +151,6 @@ const Reportcaseform = () => {
         </div>
         <div className="textarea">
           <div>
-            {/* <label> Reason of Reporting:</label> */}
             <textarea
               rows="1"
               cols="49"
