@@ -1,6 +1,6 @@
 .home{
     width: 100%;
-    height: 80vh;
+    height:80vh;
     object-fit: cover;
     border: 1px solid rgb(230, 170, 19);
 }
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55vh;
+    height: 45vh;
     gap: 10%;
 }
 .homebutton {
@@ -29,4 +29,80 @@
     font-family: 'Alumni Sans Inline One', cursive;
     font-size: 36px;
     color:red;
+}
+
+
+/* //-------------counting---------------// */
+.main-count{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 50px;
+}
+.sub-count{
+    box-shadow: 0px 0px 10px black;
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 12px;
+    border-radius: 0.5em;
+    background-color:whitesmoke;
+    border-bottom: 10px solid rgb(4, 13, 57);
+}
+span.num{
+    color: black;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+span.text {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+@media screen and (max-width: 1024px){
+    .main-count{
+        width: 85vw;
+        margin: 20px;
+    }
+    .sub-count{
+        height: 36vmin;
+        width: 26vmin;
+    }
+}
+@media screen and (max-width: 768px){
+    .main-count{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin: 20px;
+
+    }
+    .sub-count{
+        height: calc(50% -40%);
+        width: 30vmin;
+    }
+}
+@media screen and (max-width: 480px){
+    .main-count{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 20px;
+    }
+    .sub-count{
+        height: 45vmin;
+        width: 100%;
+        font-size: 10px;
+    }
 }
