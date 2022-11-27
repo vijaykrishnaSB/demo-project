@@ -8,11 +8,10 @@ import volunteer from "../../assets/volunteer.jpg";
 import childdonates from "../../assets/child-donates.jpg";
 import orphan from "../../assets/orphan.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import WcIcon from "@mui/icons-material/Wc";
 import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
 import GroupsIcon from "@mui/icons-material/Groups";
-
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 function Home({ id }) {
   const navigate = useNavigate();
   return (
@@ -111,7 +110,7 @@ function Home({ id }) {
           <h6 className="text">Donors</h6>
         </div>
         <div className="sub-count">
-          <AttachMoneyIcon sx={{ color: "green", fontSize: 45 }} />
+          <CurrencyRupeeIcon sx={{ color: "green", fontSize: 45 }} />
           <h1 className="num">10Lakhs+</h1>
           <h6 className="text">Fund raised</h6>
         </div>
