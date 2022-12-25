@@ -13,7 +13,7 @@ const Volunteerfrom = () => {
   }, []);
   const gettingdata = async () => {
     const gettingVolunteer= await axios.get(
-      `https://vijay-trustproject.herokuapp.com/volunteer/posting/${params.id}`,
+      `https://trust-t9wk.onrender.com/volunteer/posting/${params.id}`,
       {}
     );
     formik.setValues(gettingVolunteer.data);

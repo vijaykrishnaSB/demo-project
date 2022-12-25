@@ -6,7 +6,7 @@ import { reportSchema } from "./Reportschema";
 const Reportcaseform = () => {
   const getuser = (values) => {
     console.log(values);
-    fetch("https://vijay-trustproject.herokuapp.com/reports/report", {
+    fetch("https://trust-t9wk.onrender.com/reports/report", {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },

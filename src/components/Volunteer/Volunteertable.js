@@ -9,7 +9,7 @@ const Volunteercase = () => {
   const [tabdata, setTabdata] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("https://vijay-trustproject.herokuapp.com/volunteer", {
+    fetch("https://trust-t9wk.onrender.com/volunteer", {
       method: "GET",
       body: JSON.stringify(),
       headers: { "Content-Type": "application/json" },

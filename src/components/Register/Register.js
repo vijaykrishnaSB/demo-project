@@ -19,7 +19,7 @@ const RegisterForm = () => {
     }
   };
   const getuser = (values) => {
-    fetch("https://vijay-trustproject.herokuapp.com/users/signup", {
+    fetch("https://trust-t9wk.onrender.com/users/signup", {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },

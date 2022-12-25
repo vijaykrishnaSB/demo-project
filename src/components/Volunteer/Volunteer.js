@@ -6,7 +6,7 @@ import { Volunteerschema } from "./Volunteerschema";
 const Volunteerfrom = () => {
   const getuser = (values) => {
     console.log(values);
-    fetch("https://vijay-trustproject.herokuapp.com/volunteer/posting", {
+    fetch("https://trust-t9wk.onrender.com/volunteer/posting", {
       method: "POST",
       body: JSON.stringify(values),
       headers: { "Content-Type": "application/json" },
